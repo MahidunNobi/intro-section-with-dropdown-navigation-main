@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+<link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+  <div class="container navBar">
+    <div class="logo"> <img src="images/logo.svg" alt=""></div>
+    <div class="middleLinks">
+<!-- Features Button -->
+      <a href="#" id="features" onclick="DexfeaturesFunction()"> <span id="Ftext"> Features </span> <img src="images/icon-arrow-down.svg" alt="" class="FdownArrow"> <img src="images/icon-arrow-up.svg" alt="" class="FupparArrow none">
+        <ul class="featuresLink none">
+          <li><img src="images/icon-todo.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Todo List </li>
+          <li><img src="images/icon-calendar.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Calendar </li>
+          <li><img src="images/icon-reminders.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Reminders</li>
+          <li><img src="images/icon-planning.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Planing</li>
+        </ul>
+      
+      
+      </a>
+
+
+<!-- Company Button -->
+      <a href="#" id="company" onclick="DexcompanyFunction()"> <span id="Ctext"> Company </span> <img src="images/icon-arrow-down.svg" alt="" class="CdownArrow"> <img src="images/icon-arrow-up.svg" alt="" class="CupparArrow none">
+        <ul class="companyLink none">
+          <li> History </li>
+          <li> Out Team</li>
+          <li> Blog </li>
+          
+        </ul>
+       </a>
+
+
+      <a href="#" class="links"> Careers </a>
+      <a href="#" class="links"> About </a>
+    </div>
+    <div class="rightLinks ">
+      <a href="#" class="links"> Login</a>
+      <a href="#" class="links" id="register"> Register</a>
+    </div>
+    <div class="manuImg">
+      <button id="menubar" class="bar"><img src="images/icon-menu.svg" alt=""> </button>
+    </div>
+  </div>
+  
+  <!-- Mobile menu -->
+  <div id="mobildMnu" class="mobileMenu none">
+    <div id="closeBtn"> <button id="closeBar" class="bar">  <img id="closeImg" src="images/icon-close-menu.svg" alt=""> </button> </div>
+    <div class="topLinks">
+      <a href="#" id="features" onclick="featuresFunction()"> <span id="Ftext"> Features </span> <img src="images/icon-arrow-down.svg" alt="" class="FdownArrow"> <img  src="images/icon-arrow-up.svg" alt="" class="FupparArrow none" >
+        <ul id="featureslinks" class="featuresLinkMobile none">
+          <li><img src="images/icon-todo.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Todo List </li>
+          <li><img src="images/icon-calendar.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Calendar </li>
+          <li><img src="images/icon-reminders.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Reminders</li>
+          <li><img src="images/icon-planning.svg" alt="" style="margin-right: 5px; padding-top: 1px;"> Planing</li>
+        </ul>
+      
+      
+      </a>
+
+
+<!-- Company Button -->
+      <a href="#" id="company" onclick="companyFunction()"> <span id="Ctext"> Company </span> <img src="images/icon-arrow-down.svg" alt="" class="CdownArrow"> <img src="images/icon-arrow-up.svg" alt="" class="CupparArrow none">
+        <ul class="companyLinkMobile none">
+          <li> History </li>
+          <li> Out Team</li>
+          <li> Blog </li>
+          
+        </ul>
+       </a>
+
+
+      <a href="#" class="links"> Careers </a>
+      <a href="#" class="links"> About </a>
+    </div>
+    <div class="bottomBtn">
+      <a href="#" class="links"> Login</a>
+      <a href="#" class="links" id="register"> Register</a>
+    </div>
+  </div>
+</nav>
+<!-- Herro Section------------- -->
+<section class="">
+  <div class="container hero">
+    <div class="nothing">
+
+    </div>
+    <div class="text">
+      <h1>
+        Make remote work
+      </h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+      </p>
+      <div class="lBtn"><button id="LearnMore">
+        Learn more
+      </button> </div>
+      <div class="imgLinks">
+        <a href="#"><img src="images/client-databiz.svg" alt=""></a>
+        <a href="#"><img src="images/client-audiophile.svg" alt=""></a>
+        <a href="#"><img src="images/client-meet.svg" alt=""></a>
+        <a href="#"><img src="images/client-maker.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="heroImg">
+      <img src="images/image-hero-desktop.png" alt="" id="heroDextop">
+      <img src="images/image-hero-mobile.png" alt="" id="heroMobile">
+    </div>
+  </div>
+</section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">MD. Mahidun Nobi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

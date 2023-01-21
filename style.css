@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+}
+.container{
+    margin: auto;
+    padding: 35px 20px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    flex-grow: 1;
+}
+.middleLinks{
+    flex-grow: 8;
+    margin-left: 20px;
+}
+.rightLinks{
+    flex-grow: 0.1;
+}
+.middleLinks>a, .rightLinks>a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: inherit;
+    margin-right: 20px;
+    font-size: 15px;
+}
+/* Hover effacts */
+#features:hover #Ftext{
+    color: hsl(0, 0%, 8%);
+}
+#company:hover #Ctext{
+    color: hsl(0, 0%, 8%);
+}
+.links:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+#register{
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#register:hover{
+    border-color: hsl(0, 0%, 8%);
+}
+/* Drop Down Menu Design */
+
+#features{
+    position: relative;
+   
+}
+ul.featuresLink {
+    position: absolute;
+    margin-top: 15px;
+    width: 120px;
+    background: white;
+    box-shadow: 0px 3px 6px 1px grey;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: -65px;
+}
+ul.featuresLink>li{
+    list-style-type: none;
+    margin-bottom: 17px;
+}
+ul.featuresLink>li:hover{
+    color: hsl(0, 0%, 8%);
+}
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+.company{
+    position: relative;
+}
+.companyLink{
+    position: absolute;
+    margin-top: 15px;
+    width: 75px;
+    background: white;
+    box-shadow: 0px 3px 6px 1px grey;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 113px;
+}
+ul.companyLink>li{
+    list-style-type: none;
+    margin-bottom: 17px;
+}
+ul.companyLink>li:hover{
+    color: hsl(0, 0%, 8%);
+}
+.bar{
+    background-color: transparent;
+    border: none;
+}
+/* Mobile Menu */
+.manuImg{
+    width: 30px;
+    display: none;
+}
+.manuImg>img{
+    width: 100%;
+}
+.mobileMenu{
+    position: absolute;
+    background: hsl(0, 6%, 94%);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    padding: 20px 15px;
+}
+nav{
+    position: relative;
+}
+#closeBtn{ 
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+#closeBtn>button{
+    cursor: pointer; 
+}
+.bottomBtn{
+    width: 100%;
+    text-align: center;
+    font-size: px;
+}
+.topLinks>a, .bottomBtn>a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: inherit;
+    margin-right: 20px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 25px;
+}
+ul.featuresLinkMobile{
+    list-style-type: none;
+    margin: 20px 0px 0px 20px;
+}
+ul.featuresLinkMobile>li{
+    margin-bottom: 15px;
+}
+ul.featuresLinkMobile>li:hover{
+    color: hsl(0, 0%, 8%);
+}
+ul.companyLinkMobile{
+    list-style-type: none;
+    margin: 20px 0px 0px 20px;
+}
+ul.companyLinkMobile>li{
+    margin-bottom: 15px;
+}
+ul.companyLinkMobile>li:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+/* ---------------- Hero Design--------------- */
+.hero{
+    display: flex
+}
+.nothing{
+    width: 10%;
+}
+
+.text{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.text>h1{
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+.text>p{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 50px;
+}
+.lBtn{
+    margin-bottom: 180px;
+}
+#LearnMore{
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#LearnMore:hover{
+    color: hsl(0, 0%, 8%);
+    background: white;
+    border: 2px solid hsl(0, 0%, 8%);
+}
+.imgLinks{
+    width: 100%;
+}
+.imgLinks>a>img{
+    width: 20%;
+    margin-right: 5px;
+}
+.heroImg{
+    width: 50%;
+    margin-right: -20px;
+}
+
+#heroMobile{
+    display: none;
+}
+.heroImg>img{
+    width: 95%;
+    
+}
+
+
+
+/* Hover effacts */
+#features:hover #Ftext{
+    color: hsl(0, 0%, 8%);
+}
+#company:hover #Ctext{
+    color: hsl(0, 0%, 8%);
+}
+.links:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+#register{
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#register:hover{
+    border-color: hsl(0, 0%, 8%);
+}
+
+
+
+/* Responsive Container Design */
+@media (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+    .middleLinks{
+        display: none;
+    }
+    .rightLinks{
+        display: none;
+    }
+    .manuImg{
+        display: block;
+    }
+    /* Hero */
+    .nothing{
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+       
+    }
+    #heroDextop{
+        display: none;
+    }
+    #heroMobile{
+        display: block;
+    }
+    .heroImg{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    .text>h1{
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .text>p{
+        line-height: 1.7;
+        
+       
+        color: hsl(0, 0%, 41%);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .lBtn{
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    .imgLinks>a>img {
+        width: 23%;
+        
+    }
+
+}
+@media (min-width: 600px) {
+    .container{
+        width: 600px;
+    }
+    .middleLinks{
+        display: none;
+    }
+    .rightLinks{
+        display: none;
+    }
+    .manuImg{
+        display: block;
+    }
+    
+    
+
+}
+@media (min-width: 768px) {
+    .container{
+        width: 700px;
+        margin: auto;
+    }
+    .middleLinks{
+        display: block;
+    }
+    .rightLinks{
+        display: block;
+    }
+    .manuImg{
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 900px;
+        margin: auto;
+    }
+    .middleLinks{
+        display: block;
+    }
+    .rightLinks{
+        display: block;
+    }
+    .manuImg{
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1120px;
+    }
+    .middleLinks{
+        display: block;
+    }
+    .rightLinks{
+        display: block;
+    }
+    .manuImg{
+        display: none;
+    }
+}
